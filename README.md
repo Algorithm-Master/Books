@@ -20,7 +20,7 @@
 [iOSAppReverseEngineering.pdf](https://algorithm-master.github.io/Books/iOSAppReverseEngineering.pdf).<br>
 [learning-react-native.pdf](https://algorithm-master.github.io/Books/learning-react-native.pdf).<br>
 [liaoxuefeng.pdf](https://algorithm-master.github.io/Books/liaoxuefeng.pdf).<br>
-[McGrawHill-Machine-Learning-Tom_Mitchell.pdf](https://algorithm-master.github.io/Books/McGrawHill%20-%20Machine%20Learning%20-Tom Mitchell.pdf).<br>
-[Morris_H_DeGroot_Mark_J_Schervish-Probability_and_statistics-Pearson_Education_(2012).pdf](https://algorithm-master.github.io/Books/Morris H DeGroot_ Mark J Schervish-Probability and statistics-Pearson Education%20%20(2012)%20.pdf).<br>
+[McGrawHill-Machine-Learning-Tom_Mitchell.pdf](https://algorithm-master.github.io/Books/McGrawHill%20-%20Machine%20Learning%20-Tom%20Mitchell.pdf).<br>
+[Morris_H_DeGroot_Mark_J_Schervish-Probability_and_statistics-Pearson_Education_(2012).pdf](https://algorithm-master.github.io/Books/Morris%20H%20DeGroot_%20Mark%20J%20Schervish-Probability%20and%20statistics-Pearson%20Education%20%20(2012)%20.pdf).<br>
 [RE_for_beginners-en.pdf](https://algorithm-master.github.io/Books/RE_for_beginners-en.pdf).<br>
 [Deep Learning.pdf](https://algorithm-master.github.io/Books/White_book.pdf).<br>
