@@ -24,3 +24,4 @@
 [Morris_H_DeGroot_Mark_J_Schervish-Probability_and_statistics-Pearson_Education_(2012).pdf](https://algorithm-master.github.io/Books/Morris%20H%20DeGroot_%20Mark%20J%20Schervish-Probability%20and%20statistics-Pearson%20Education%20%20(2012)%20.pdf).<br>
 [RE_for_beginners-en.pdf](https://algorithm-master.github.io/Books/RE_for_beginners-en.pdf).<br>
 [Deep Learning.pdf](https://algorithm-master.github.io/Books/White_book.pdf).<br>
+[剑指Offer.pdf](https://algorithm-master.github.io/Books/剑指OFFER%20%20名企面试官精讲典型编程题%20%20第2版.pdf).<br>
