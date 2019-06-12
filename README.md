@@ -29,4 +29,4 @@
 <br>
 <br>
 
-[index](https://algorithm-master.github.io/Books/Books/documents/01.html).<br>
+[趣事](https://algorithm-master.github.io/Books/docs/01.html).<br>
