@@ -7,6 +7,12 @@
     <body>
         <h1>WebRTC实时通信</h1>
         <video autoplay playsinline></video>
-        <script src="js/client.js"></script>
+        <script src="js/client.js">
+            var console = {};
+            console.log = function(message){
+                window.webkit.messageHandlers['logger'].postMessage(message)
+            };
+            console.log('test');
+        </script>
     </body>
 </html>
