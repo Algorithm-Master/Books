@@ -7,6 +7,7 @@ const mediaStreamContrains = {
 const localVideo = document.querySelector('video');
 
 function gotLocalMediaStream(mediaStream){
+    console.log('navigator.getUserMedia success');
     localVideo.srcObject = mediaStream;
 }
 
