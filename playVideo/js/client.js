@@ -16,12 +16,6 @@ function handleLocalMediaStreamError(error){
     console.log('navigator.getUserMedia error: ', error.message);
 }
 
-var console = {};
-
-console.log = function(message){
-    window.webkit.messageHandlers['logger'].postMessage(message)
-};
-
 navigator.mediaDevices.getUserMedia(mediaStreamContrains).then(
     gotLocalMediaStream
 ).catch(
