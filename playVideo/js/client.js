@@ -1,7 +1,11 @@
 'use strict';
 
 const mediaStreamContrains = {
-    video: { facingMode: "environment" },
+    video: {
+        facingMode: "environment",
+        width: 320,
+        height: 200
+    },
     audio: true
 };
 
