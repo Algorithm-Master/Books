@@ -17,16 +17,25 @@ navigator.mediaDevices.enumerateDevices()
             if(deviceInfo.kind === 'videoinput') {
                 videoId = deviceInfo.deviceId
                 alert(videoId)
-                let mediaStreamContrains = {
-                    video: {
-                        deviceId: videoId,
-                        // facingMode: "user",
-                        width: 320,
-                        height: 200
-                    },
-                    audio: true
+                if(videoId.length > 0) {
+                    let mediaStreamContrains = {
+                        video: {
+                            deviceId: videoId,
+                            // facingMode: "user",
+                            width: 320,
+                            height: 200
+                        },
+                        audio: true
+                    }
+                    startVideo(mediaStreamContrains)
+                } else {
+                    let mediaStreamContrains = {
+                        video: true,
+                        audio: true
+                    }
+                    startVideo(mediaStreamContrains)
                 }
-                startVideo(mediaStreamContrains)
+
             }
         });
     })
