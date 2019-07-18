@@ -1,7 +1,8 @@
 'use strict';
 
 const mediaStreamContrains = {
-    video: true
+    video: { facingMode: "environment" },
+    audio: true
 };
 
 const localVideo = document.querySelector('video');
