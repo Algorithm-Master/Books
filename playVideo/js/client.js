@@ -5,7 +5,7 @@ if (!navigator.mediaDevices || !navigator.mediaDevices.enumerateDevices) {
     console.log("enumerateDevices() not supported.");
 }
 
-let videoId = '';
+var videoId = '';
 // 枚举 cameras and microphones.
 navigator.mediaDevices.enumerateDevices()
     .then(function(deviceInfos) {
@@ -16,6 +16,17 @@ navigator.mediaDevices.enumerateDevices()
                 " id = " + deviceInfo.deviceId);
             if(deviceInfo.kind === 'videoinput') {
                 videoId = deviceInfo.deviceId
+                alert(videoId)
+                let mediaStreamContrains = {
+                    video: {
+                        deviceId: videoId,
+                        // facingMode: "user",
+                        width: 320,
+                        height: 200
+                    },
+                    audio: true
+                }
+                startVideo(mediaStreamContrains)
             }
         });
     })
@@ -23,15 +34,6 @@ navigator.mediaDevices.enumerateDevices()
         console.log(err.name + ": " + err.message);
     });
 
-const mediaStreamContrains = {
-    video: {
-        deviceID: videoId,
-        // facingMode: "user",
-        width: 320,
-        height: 200
-    },
-    audio: true
-};
 
 const localVideo = document.querySelector('video');
 
@@ -47,11 +49,18 @@ function handleLocalMediaStreamError(error){
     console.log('navigator.getUserMedia error: ', error.message);
 }
 
-console.log('get play devices ', navigator.mediaDevices.enumerateDevices())
+
+function startVideo(mediaStreamContrains) {
+    navigator.mediaDevices.getUserMedia(mediaStreamContrains).then(
+        gotLocalMediaStream
+    ).catch(
+        handleLocalMediaStreamError
+    );
+}
 // navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.mediaDevices.getUserMedia;
 
-navigator.mediaDevices.getUserMedia(mediaStreamContrains).then(
-    gotLocalMediaStream
-).catch(
-    handleLocalMediaStreamError
-);
+
+
+
+
+
