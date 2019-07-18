@@ -23,10 +23,10 @@ function handleLocalMediaStreamError(error){
     console.log('navigator.getUserMedia error: ', error.message);
 }
 
-navigator.getUserMedia = navigator.getUserMedia ||
-    navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.mediaDevices.getUserMedia;
+console.log('get play devices ', navigator.mediaDevices.enumerateDevices)
+// navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.mediaDevices.getUserMedia;
 
-navigator.getUserMedia(mediaStreamContrains).then(
+navigator.mediaDevices.getUserMedia(mediaStreamContrains).then(
     gotLocalMediaStream
 ).catch(
     handleLocalMediaStreamError
