@@ -38,7 +38,7 @@ function start() {
                 width: 640,	
                 height: 480,
                 frameRate:15,
-                facingMode: 'enviroment'
+                facingMode: 'user'
 		//,
                 //deviceId : deviceId ? {exact:deviceId} : undefined 
             }, 

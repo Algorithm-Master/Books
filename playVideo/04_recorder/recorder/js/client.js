@@ -38,9 +38,10 @@ function start() {
 			video : {
 				width: 640,	
 				height: 480,
-				frameRate:15
+				frameRate:15,
+				facingMode: 'user'
 			}, 
-			audio : false 
+			audio : true
 		}
 
 		navigator.mediaDevices.getUserMedia(constraints)
